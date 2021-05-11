@@ -1,0 +1,16 @@
+nav{
+    background-color: rgb(25, 142, 124);
+    height: 75px;
+
+    animation: colorido1 10s infinite
+}
+
+#logo{
+    height: 60px;
+    width: auto;
+    margin: 3px;
+}
+
+a{
+    color: black;
+}
