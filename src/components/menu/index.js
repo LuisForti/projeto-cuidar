@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 
 import Modal from 'react-bootstrap/Modal';
 import ModalDialog from 'react-bootstrap/ModalDialog';
@@ -13,11 +12,10 @@ import Logo from '../../assets/images/Logo.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 
-import './Menu.css';
+/*import './Menu.css';*/
 
-export default class Menu extends Component{
 
-    ModalLogin(props) {
+    /*function ModalLogin(props) {
         return(
             <Modal
                 {...props}
@@ -40,7 +38,7 @@ export default class Menu extends Component{
         )
     }
 
-    ModalCriar(props){
+    function ModalCriar(props){
 
         return <Modal
             {...props}
@@ -60,37 +58,30 @@ export default class Menu extends Component{
                 </Form>
             </Modal.Body>
         </Modal>
-    }
+    }*/
 
-    Menu(){
-        const [modalLogin, setLoginShow] = React.useState(false);
-        const [modalCriar, setCriarShow] = React.useState(false);
+    export default function Menu(){
+        /*const [modalLogin, setLoginShow] = React.useState(false);
+        const [modalCriar, setCriarShow] = React.useState(false);*/
 
         return <div>
 
-            <ModalLogin show={modalLogin} onHide={() => setLoginShow(false)}/>
-            <ModalCriar show={modalCriar} onHide={() => setCriarShow(false)}/>
+            {/*<ModalLogin show={modalLogin} onHide={() => setLoginShow(false)}/>
+            <ModalCriar show={modalCriar} onHide={() => setCriarShow(false)}/>*/}
 
             <Navbar expand="lg">
                 <Navbar.Brand>
-                    <Link to="/">
-                        <img src={Logo} alt="Cuidar" id="logo"/>
-                    </Link>
+                        {/*<img src={Logo} alt="Cuidar" id="logo"/>*/}
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
 
                 <Navbar.Collapse>
                     <Nav className="mr-auto">
-                        <Nav.Link onClick={() => setLoginShow(true)}>Login</Nav.Link>
-                        <Nav.Link onClick={() => setCriarShow(true)}>CriarConta</Nav.Link>
+                        <Nav.Link /*onClick={() => setLoginShow(true)}*/>Login</Nav.Link>
+                        <Nav.Link /*onClick={() => setCriarShow(true)}*/>CriarConta</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </div>
     }
-
-    render(){
-        return <Menu/>
-    }
-}
