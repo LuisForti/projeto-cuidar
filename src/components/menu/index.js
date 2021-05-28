@@ -10,12 +10,13 @@ import Form from 'react-bootstrap/Form'
 
 import Logo from '../../assets/images/Logo.png';
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
+import Nav from 'react-bootstrap/Nav';
 
-/*import './Menu.css';*/
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Menu.css';
 
 
-    /*function ModalLogin(props) {
+    function ModalLogin(props) {
         return(
             <Modal
                 {...props}
@@ -55,31 +56,31 @@ import Nav from 'react-bootstrap/Nav'
             <Modal.Body>
                 <Form>
 
-                </Form>
+                </Form> 
             </Modal.Body>
         </Modal>
-    }*/
+    }
 
     export default function Menu(){
-        /*const [modalLogin, setLoginShow] = React.useState(false);
-        const [modalCriar, setCriarShow] = React.useState(false);*/
+        const [modalLogin, setLoginShow] = React.useState(false);
+        const [modalCriar, setCriarShow] = React.useState(false);
 
         return <div>
 
-            {/*<ModalLogin show={modalLogin} onHide={() => setLoginShow(false)}/>
-            <ModalCriar show={modalCriar} onHide={() => setCriarShow(false)}/>*/}
+            <ModalLogin show={modalLogin} onHide={() => setLoginShow(false)}/>
+            <ModalCriar show={modalCriar} onHide={() => setCriarShow(false)}/>
 
             <Navbar expand="lg">
                 <Navbar.Brand>
-                        {/*<img src={Logo} alt="Cuidar" id="logo"/>*/}
+                    <img src={Logo} alt="Cuidar" id="logo"/>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
 
                 <Navbar.Collapse>
                     <Nav className="mr-auto">
-                        <Nav.Link /*onClick={() => setLoginShow(true)}*/>Login</Nav.Link>
-                        <Nav.Link /*onClick={() => setCriarShow(true)}*/>CriarConta</Nav.Link>
+                        <Nav.Link onClick={() => setLoginShow(true)}>Login</Nav.Link>
+                        <Nav.Link onClick={() => setCriarShow(true)}>Criar Conta</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

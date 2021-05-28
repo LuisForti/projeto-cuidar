@@ -14,3 +14,20 @@ nav{
 a{
     color: black;
 }
+
+Modal.Header{
+    background-color: rgb(25, 142, 124);
+    animation: colorido2 10s infinite
+}
+
+@keyframes colorido1 {
+    from   { background: #019973 }
+    50% { background: #61c2a1}
+    to { background: #019973 }
+  }
+  
+  @keyframes colorido2{
+    from { background: #61c2a1;}
+    50% { background: #a0dacd;}
+    to { background: #61c2a1; }
+  }
