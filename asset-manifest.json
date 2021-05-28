@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/projeto-cuidar/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/projeto-cuidar/static/js/main.4dc7ade9.chunk.js",
-    "main.js.map": "/projeto-cuidar/static/js/main.4dc7ade9.chunk.js.map",
-    "runtime-main.js": "/projeto-cuidar/static/js/runtime-main.28e8efea.js",
-    "runtime-main.js.map": "/projeto-cuidar/static/js/runtime-main.28e8efea.js.map",
-    "static/js/2.645fa8d6.chunk.js": "/projeto-cuidar/static/js/2.645fa8d6.chunk.js",
-    "static/js/2.645fa8d6.chunk.js.map": "/projeto-cuidar/static/js/2.645fa8d6.chunk.js.map",
-    "static/js/3.f3cada7c.chunk.js": "/projeto-cuidar/static/js/3.f3cada7c.chunk.js",
-    "static/js/3.f3cada7c.chunk.js.map": "/projeto-cuidar/static/js/3.f3cada7c.chunk.js.map",
+    "main.css": "/projeto-cuidar/static/css/main.600e53e4.chunk.css",
+    "main.js": "/projeto-cuidar/static/js/main.c44edeb0.chunk.js",
+    "main.js.map": "/projeto-cuidar/static/js/main.c44edeb0.chunk.js.map",
+    "runtime-main.js": "/projeto-cuidar/static/js/runtime-main.c4c662cf.js",
+    "runtime-main.js.map": "/projeto-cuidar/static/js/runtime-main.c4c662cf.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/projeto-cuidar/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.29077c8c.chunk.js": "/projeto-cuidar/static/js/2.29077c8c.chunk.js",
+    "static/js/2.29077c8c.chunk.js.map": "/projeto-cuidar/static/js/2.29077c8c.chunk.js.map",
+    "static/js/3.f5744a52.chunk.js": "/projeto-cuidar/static/js/3.f5744a52.chunk.js",
+    "static/js/3.f5744a52.chunk.js.map": "/projeto-cuidar/static/js/3.f5744a52.chunk.js.map",
     "index.html": "/projeto-cuidar/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/projeto-cuidar/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.645fa8d6.chunk.js.LICENSE.txt": "/projeto-cuidar/static/js/2.645fa8d6.chunk.js.LICENSE.txt",
+    "static/css/2.4c97ca4f.chunk.css.map": "/projeto-cuidar/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.600e53e4.chunk.css.map": "/projeto-cuidar/static/css/main.600e53e4.chunk.css.map",
+    "static/js/2.29077c8c.chunk.js.LICENSE.txt": "/projeto-cuidar/static/js/2.29077c8c.chunk.js.LICENSE.txt",
+    "static/media/Logo.e10eee80.png": "/projeto-cuidar/static/media/Logo.e10eee80.png",
     "static/media/logo.6ce24c58.svg": "/projeto-cuidar/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.28e8efea.js",
-    "static/js/2.645fa8d6.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.4dc7ade9.chunk.js"
+    "static/js/runtime-main.c4c662cf.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.29077c8c.chunk.js",
+    "static/css/main.600e53e4.chunk.css",
+    "static/js/main.c44edeb0.chunk.js"
   ]
 }
