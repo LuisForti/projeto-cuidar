@@ -1,0 +1,81 @@
+div#pagina{
+    width: 100%;
+    height: 65vh;
+}
+
+div.listagem-pet{
+    padding: 5px;
+    margin-top: 50px;
+    margin-left: 15vw;
+    width: 70vw;
+    height: 48vh;
+    padding-top: 3vh;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+}
+
+#fotoPet{
+    float: left;
+    width: 40%;
+    height: 41vh;
+    object-fit: cover;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+div#dados{
+    text-align: left;
+    margin-left: 32vw;
+}
+
+h1.nome{
+    text-align: center;
+}
+
+@media only screen and (max-height: 550px){
+    div#pagina{
+        height: 120vh;
+    }
+    
+    div.listagem-pet{
+        margin-top: 10px;
+        margin-left: 5vw;
+        width: 90vw;
+        height: 111vh;
+        padding-top: 3vh;
+    }
+
+    #fotoPet{
+        float: none;
+        width: 90%;
+        height: 60vh;
+    }
+
+    div#dados{
+        margin-left: 5vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div#pagina{
+        height: 105vh;
+    }
+
+    div.listagem-pet{
+        margin-top: 10px;
+        margin-left: 5vw;
+        width: 90vw;
+        height: 90vh;
+        padding-top: 3vh;
+    }
+
+    #fotoPet{
+        float: none;
+        width: 90%;
+        height: 41vh;
+    }
+
+    div#dados{
+        margin-left: 5vw;
+    }
+}

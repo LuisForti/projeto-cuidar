@@ -1,8 +1,9 @@
-nav{
+#navbar{
     background-color: rgb(25, 142, 124);
-    height: 75px;
 
-    animation: colorido1 10s infinite
+    padding: none;
+
+    animation: colorido1 10s infinite;
 }
 
 #logo{
