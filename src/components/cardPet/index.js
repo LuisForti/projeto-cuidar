@@ -50,7 +50,7 @@ export default class CardPet extends Component{
             return <Link to={"pets/" + this.props.petId} class="card-link">
                 <Card class="card">
                     <Card.Body>
-                        <Card.Img variant="top" src={window.location.origin + "/" + this.props.fotoPet} id="image-pet"/>
+                        <Card.Img variant="top" src={this.props.fotoPet} id="image-pet"/>
                         <Card.Title id="titulo">{this.props.nomePet}</Card.Title>
                         <footer>
                             <small className="text-muted">

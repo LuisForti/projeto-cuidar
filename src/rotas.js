@@ -18,11 +18,11 @@ export default class Rotas extends Component {
                 <Route exact path="/sobre" component={Sobre} />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/cadastro" component={Cadastro} />
-                <Route exact path="/" component={ListaPets} />
+                <Route exact path="/animais" component={ListaPets} />
                 <Route exact path="/pets/:id" component={DadosPet} />
                 <Route exact path="/historico" component={Historico} />
                 <Route exact path="/perfil" component={Perfil} />
-                <Redirect from='*' to='/' />
+                <Redirect from='*' to='/login' />
             </Switch>
         )
     }

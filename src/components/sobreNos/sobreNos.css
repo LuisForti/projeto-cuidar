@@ -34,7 +34,7 @@ header{
     animation: fade 1.5s ease-in;
   }
   
-  header div#texto strong:not(#textoForte){
+  strong:not(#textoForte){
     color: #ffa79b;
   }
 
@@ -63,7 +63,7 @@ header{
   }
   
   section{
-    border-radius: 1vw;
+    border-radius: 1vh;
     height: auto;
     width: 100%;
     padding: 50px;
@@ -73,9 +73,8 @@ header{
       animation: spin 0.8s ease-out;
   }
 
-  div.comoComecamos{
+  div.comoComecamos, div.oqQueremos, div.ondeEstamos{
     position: relative;
-    top: -8vh;
     z-index: -1;
 
     width: 100%;
@@ -89,6 +88,20 @@ header{
     background-attachment: fixed;
 
     background-color: rgb(25, 142, 124);
+  }
+
+  div.comoComecamos{
+    top: -8vh;
+  }
+
+  div.oqQueremos{
+    background-image: url("https://cdn.discordapp.com/attachments/813722841580830753/851993641101688842/Perro-dueC3B1o.png");
+    top: -11vh;
+  }
+  
+  div.ondeEstamos{
+    top: -13vh;
+    background-image: url("https://cdn.discordapp.com/attachments/813722841580830753/852005003300306974/comportamento-cachorro-dono-20160618-001.png");
   }
 
   div#texto2{
@@ -112,6 +125,23 @@ header{
     position: relative;
     top: -10vh;
     background-color: white;
+  }
+
+  section.oqQueremos{
+    position: relative;
+    top: -12vh;
+    background-color: white;
+  }
+
+  section.ondeEstamos{
+    position: relative;
+    top: -14vh;
+    background-color: white;
+  }
+
+  section div p{
+    font-size: xx-large;
+    text-align: justify;
   }
 
   @keyframes spin{

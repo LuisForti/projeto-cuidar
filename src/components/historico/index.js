@@ -102,11 +102,6 @@ export default class Historico extends Component {
                     this.setState({
                         dadosUsuario2: result
                     });
-                    var botaoIncluir = document.createElement("button")
-                    botaoIncluir.onclick = e => this.abrirInsercao()
-                    botaoIncluir.id = "inserir"
-                    botaoIncluir.innerHTML = "Inserir Pet"
-                    document.getElementById("lista").appendChild(botaoIncluir)
                     document.getElementById("botao").click()
                 },
                 (error) => {
@@ -176,7 +171,7 @@ export default class Historico extends Component {
                                     cardDataAdocao.innerHTML = "Ainda no processo de adoção"
                                 }
                                 else {
-                                    cardDataAdocao.innerHTML = "Data de adoção: " + usuarioPet.dataDeAdocao.slice(0, 1+usuarioPet.dataDeAdocao.length / 2)
+                                    cardDataAdocao.innerHTML = "Data de adoção: " + usuarioPet.dataDeAdocao.slice(0, 1 + usuarioPet.dataDeAdocao.length / 2)
                                     cardHorarioAdocao.innerHTML = "Horário de adoção: " + usuarioPet.dataDeAdocao.slice(usuarioPet.dataDeAdocao.length / 2)
                                 }
 
@@ -240,6 +235,16 @@ export default class Historico extends Component {
                 else {
                     document.getElementById("botao").remove()
 
+                    var forcaErro = document.getElementById("inserir")
+
+                    if (forcaErro == undefined) {
+                        var botaoIncluir = document.createElement("button")
+                        botaoIncluir.onclick = e => this.abrirInsercao()
+                        botaoIncluir.id = "inserir"
+                        botaoIncluir.innerHTML = "Inserir Pet"
+                        document.getElementById("lista").appendChild(botaoIncluir)
+                    }
+
                     var botao = document.createElement("button")
                     botao.onclick = e => this.listar()
                     botao.id = "atualizar"
@@ -253,11 +258,10 @@ export default class Historico extends Component {
 
                     var divLista = document.createElement("div")
 
-                    try{
+                    try {
                         document.getElementById("listagem-dos-pets").remove()
                     }
-                    catch(erro)
-                    {
+                    catch (erro) {
                         document.getElementById("pagina-forms-criar").remove()
                     }
 
@@ -308,7 +312,7 @@ export default class Historico extends Component {
                                     botaoConcluir.innerHTML = "Concluir Adoção"
                                 }
                                 else {
-                                    cardDataAdocao.innerHTML = "Data de adoção: " + usuarioPet.dataDeAdocao.slice(0, 1+usuarioPet.dataDeAdocao.length / 2)
+                                    cardDataAdocao.innerHTML = "Data de adoção: " + usuarioPet.dataDeAdocao.slice(0, 1 + usuarioPet.dataDeAdocao.length / 2)
                                     cardHorarioAdocao.innerHTML = "Horário de adoção: " + usuarioPet.dataDeAdocao.slice(usuarioPet.dataDeAdocao.length / 2)
                                 }
 
@@ -377,11 +381,10 @@ export default class Historico extends Component {
                     window.location = "/login"
                 }
                 else {
-                    try{
+                    try {
                         document.getElementById("listagem-dos-pets").remove()
                     }
-                    catch(erro)
-                    {
+                    catch (erro) {
                         document.getElementById("pagina-forms-criar").remove()
                     }
 
@@ -586,20 +589,18 @@ export default class Historico extends Component {
         }
     }
 
-    abrirInsercao()
-    {
+    abrirInsercao() {
         if (localStorage.isFuncionario == "true") {
             if (Number(localStorage.Id) == this.state.dadosFuncionario1.id) {
                 if (localStorage.Senha != this.state.dadosFuncionario1.senhaFuncionario) {
                     window.alert("Primeiro faça login!")
                     window.location = "/login"
                 }
-                else{
-                    try{
+                else {
+                    try {
                         document.getElementById("listagem-dos-pets").remove()
                     }
-                    catch(erro)
-                    {
+                    catch (erro) {
                         document.getElementById("pagina-forms-criar").remove()
                     }
                     var divPrincipal = document.createElement("div")
@@ -619,19 +620,19 @@ export default class Historico extends Component {
 
                     var textoNome = document.createElement("label")
                     var inputNome = document.createElement("input")
-                    
+
                     var textoRaca = document.createElement("label")
                     var inputRaca = document.createElement("input")
-                    
+
                     var textoIdade = document.createElement("label")
                     var inputIdade = document.createElement("input")
-                    
+
                     var textoCondicoesMedicas = document.createElement("label")
                     var inputCondicoesMedicas = document.createElement("input")
-                    
+
                     var textoDescricao = document.createElement("label")
                     var inputDescricao = document.createElement("input")
-                    
+
                     var textoFoto = document.createElement("label")
                     var inputFoto = document.createElement("input")
 
@@ -698,14 +699,14 @@ export default class Historico extends Component {
                     textoFoto.innerHTML = "Foto"
                     textoFoto.className = "form-label"
                     inputFoto.id = "foto"
-                    //inputFoto.className = "form-control"
-                    inputFoto.type = "file"
+                    inputFoto.type = "text"
+                    inputFoto.placeholder = "(nome).(jpeg/png)"
 
                     botaoInserir.type = "button"
                     botaoInserir.className = "btn btn-primary"
                     botaoInserir.value = "Inserir"
                     botaoInserir.onclick = e => this.enviar()
-                    
+
                     var divInterna1 = document.createElement("div")
                     divInterna1.className = "form-row"
 
@@ -735,32 +736,32 @@ export default class Historico extends Component {
                     formulario.appendChild(descricao)
                     formulario.appendChild(foto)
                     formulario.id = "cadastro"
-                    
+
                     divPrincipal.appendChild(imagem)
                     divPrincipal.appendChild(formulario)
 
                     document.getElementById("lista").appendChild(divPrincipal)
                 }
             }
-            else{
+            else {
                 window.alert("Primeiro faça login!")
                 window.location = "/login"
             }
         }
-        else{
+        else {
             window.alert("Você não é um funcionário!")
             window.location = "/login"
         }
     }
 
-    enviar(){
+    enviar() {
         var erro = false;
         var nome = document.getElementById("nome").value
         var raca = document.getElementById("raca").value
         var idade = document.getElementById("idade").value
         var condicoesMedicas = document.getElementById("condicoesMedicas").value
         var descricao = document.getElementById("descricao").value
-        var foto = document.getElementById("foto").value
+        var foto = "https://raw.githubusercontent.com/LuisForti/fotosPets/main/fotos/" + document.getElementById("foto").value
 
         if (foto != "") {
             var tipoDeFoto = foto.toString().slice(foto.toString().length - 4)
@@ -769,8 +770,7 @@ export default class Historico extends Component {
                 erro = true
             }
         }
-        else
-        {
+        else {
             foto = null
         }
 
@@ -811,7 +811,7 @@ export default class Historico extends Component {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ "Id":0,"nomePet":nome,"fotoPet":foto,"raca":raca,"idade":Number(idade),"condicoesMedicas":condicoesMedicas,"descricao":descricao })
+                body: JSON.stringify({ "Id": 0, "nomePet": nome, "fotoPet": foto, "raca": raca, "idade": Number(idade), "condicoesMedicas": condicoesMedicas, "descricao": descricao })
             })
                 .then(
                     resp => {

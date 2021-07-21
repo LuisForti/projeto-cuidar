@@ -4,33 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-/*import {createStore} from "redux";
-import {Provider} from "react-redux";
-
-
-const initialState = {
-  auth: {email: "", password: ""},
-  pets: [],
-  historico: []
-}
-
-const reducer = (state = initialState, action) =>{
-  switch (action.type){
-    alguma coisa
-
-    //...state, coisanova
-  }
-
-  return state;
-}
-
-const store = createStore(reducer);*/
-
 ReactDOM.render(
   <React.StrictMode>
-    {/*<Provider store={store}>*/}
       <App />
-    {/*</Provider>*/}
   </React.StrictMode>,
   document.getElementById('root')
 );

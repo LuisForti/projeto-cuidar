@@ -37,6 +37,6 @@ div#listagem-dos-pets{
     background-color:rgb(243, 243, 243);
 }
 
-#atualizar:hover, #botao:hover{
+#atualizar:hover, #botao:hover, #inserir:hover{
     background-color:rgb(131, 131, 131)
 }

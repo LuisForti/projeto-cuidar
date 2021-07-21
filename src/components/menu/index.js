@@ -24,7 +24,7 @@ import './Menu.css';
                     <Nav className="mr-auto">
                         <Nav.Link><Link to="/login">Login</Link></Nav.Link>
                         <Nav.Link><Link to="/cadastro">Criar Conta</Link></Nav.Link>
-                        <Nav.Link><Link to="/">Animais</Link></Nav.Link>
+                        <Nav.Link><Link to="/animais">Animais</Link></Nav.Link>
                         <Nav.Link><Link to="/historico">Histórico de Adoção</Link></Nav.Link>
                         <Nav.Link><Link to="/perfil">Perfil</Link></Nav.Link>
                     </Nav>
